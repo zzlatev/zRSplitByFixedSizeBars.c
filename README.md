@@ -12,10 +12,10 @@ dyn.load("zSplitByFixedSizeBars.dll")
 Linux:
 dyn.load("zSplitByFixedSizeBars.so")
 
-Use:
+3. Use:
 .Call("zSplitByFixedSizeBars", integerVector, intVolumeToSplitBy, intLengthOfTheIntegerVector)
 
-Example and output:
+4. Example and output:
 
 Input vector of volumes (note that indexes are from 1 to 4): 
 c(1200, 500, 700, 320)
@@ -30,5 +30,5 @@ The output means that:
 From index 1 to index 1 volume is 1000, then from index 1 (we have 200 more there) to index 3 
 we have a volume of 1000 and finally from index 3 (we have 400 more there) to index 4 the volume is 720.
 
-Benchmark:
+5. Benchmark:
 The code runs on ~100 million records in less then a second.
