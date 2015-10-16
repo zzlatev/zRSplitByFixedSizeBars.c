@@ -14,9 +14,11 @@ It returns the start and stop indexes of the vector where the volume split shoul
 		dyn.load("zSplitByFixedSizeBars.so")
 
 3. Use:
+	
 	.Call("zSplitByFixedSizeBars", integerVector, intVolumeToSplitBy, intLengthOfTheIntegerVector)
 
 4. Example and output:
+	
 	Input vector of volumes (note that indexes are from 1 to 4): 
 	c(1200, 500, 700, 320)
 
@@ -31,4 +33,5 @@ It returns the start and stop indexes of the vector where the volume split shoul
 	we have a volume of 1000 and finally from index 3 (we have 400 more there) to index 4 the volume is 720.
 
 5. Benchmark:
+	
 	The code runs on ~100 million records in less then a second.
