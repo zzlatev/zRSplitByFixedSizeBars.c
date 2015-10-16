@@ -3,9 +3,10 @@ C library for R to split integer vectors to equal size bars (could be equal volu
 It returns the start and stop indexes of the vector where the volume split should occur.
 
 1. Compile for R:
-R CMD SHLIB zSplitByFixedSizeBars.c
+	R CMD SHLIB zSplitByFixedSizeBars.c
 
 2. Load in R.
+		
 	Windows:
 		dyn.load("zSplitByFixedSizeBars.dll")
 
