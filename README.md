@@ -5,6 +5,11 @@ It returns the start and stop indexes of the vector where the volume split shoul
 1. Compile for R:
 	
 	R CMD SHLIB zSplitByFixedSizeBars.c
+	
+	*For Windows you also need Rtools33.exe (GNU GCC compiller included) from https://cran.r-project.org/bin/windows/Rtools/
+	*You also need to set the path in CMD: PATH=c:\Rtools\bin;c:\Rtools\gcc-4.6.3\bin;C:\R\bin\x64
+	
+	
 
 2. Load in R.
 		
